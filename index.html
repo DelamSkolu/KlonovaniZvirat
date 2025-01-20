@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetClone Technologies - Bringing Beloved Pets Back</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <svg width="50" height="50" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="#2196f3"/>
+        <path d="M30,50 Q50,20 70,50 T30,50" fill="white" />
+        <circle cx="40" cy="45" r="5" fill="white"/>
+        <circle cx="60" cy="45" r="5" fill="white"/>
+      </svg>
+      PetClone
+    </div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#species">Species</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Preserve Your Pet's Legacy</h1>
+      <p>Using cutting-edge genetic technology to bring beloved companions back into your life</p>
+      <button class="cta-button" onclick="scrollToContact()">Start Your Journey</button>
+    </div>
+    <div id="dna-animation"></div>
+  </section>
+
+  <section id="process">
+    <h2>Our Cloning Process</h2>
+    <div class="process-cards">
+      <div class="process-card">
+        <div class="step-number">1</div>
+        <h3>Sample Collection</h3>
+        <p>We collect genetic material from your pet through a simple, non-invasive procedure</p>
+      </div>
+      <div class="process-card">
+        <div class="step-number">2</div>
+        <h3>Lab Processing</h3>
+        <p>Our advanced laboratories process and preserve the genetic material</p>
+      </div>
+      <div class="process-card">
+        <div class="step-number">3</div>
+        <h3>Cloning</h3>
+        <p>Using somatic cell nuclear transfer technology to create an identical genetic copy</p>
+      </div>
+      <div class="process-card">
+        <div class="step-number">4</div>
+        <h3>Birth & Care</h3>
+        <p>Professional veterinary care throughout gestation and early life stages</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="species">
+    <h2>Available Species</h2>
+    <div class="species-grid" id="speciesGrid"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Start Your Cloning Journey</h2>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <input type="text" id="name" required placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" required placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <select id="petType" required>
+          <option value="">Select Pet Type</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="horse">Horse</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea id="message" required placeholder="Tell us about your pet"></textarea>
+      </div>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 PetClone Technologies. All rights reserved.</p>
+    <p>Disclaimer: Results may vary. Cloned pets may have different personality traits from the original.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
